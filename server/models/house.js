@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 //----------create schema--------------------------------------------------
 const houseSchema = new mongoose.Schema({
     houseName: {type: String, required: true, minlength: 3},
-    address: {type: String, required: true},
+    address: {type: String, required: true, unique: true},
     weatherCode: {type: Number},
     chores: [
         { 
@@ -18,7 +18,7 @@ const houseSchema = new mongoose.Schema({
     members: [
         {
             memberName: {type: String, required: true, minlength: 3},
-            email: {type: String, required: true, minlength: 5},
+            email: {type: String, required: true, minlength: 5, unique: true},
             password: {type: String, required: true}
         }
     ],

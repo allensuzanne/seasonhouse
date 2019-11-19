@@ -12,6 +12,7 @@ export class HttpService {
   // getHouses(){
   //   return this._http.get('/api/read');
   // }
+  
   // createNewHouse(newHouse){
   //   return this._http.post('/api/new', newHouse);
   // }
