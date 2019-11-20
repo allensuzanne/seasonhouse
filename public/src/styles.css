@@ -1,1 +1,196 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+----------------------- Reset styling, scroll to line 50 for the globally applied styles ----------------
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    }
+
+/* HTML5 display-role reset for older browsers */
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/*
+----------------------- Globally applied styles ---------------------
+*/
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Font sizes for standard text elements*/
+
+h1{
+    font-size: 48px;    
+    line-height: 42px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h4{
+    font-size: 21px;
+    line-height: 30px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Color classes */
+
+.black {
+    color: #1B1B1B;
+}
+.black-bg {
+    background-color: #1B1B1B;
+}
+
+.darkgrey {
+    color: #9DA5C1;
+}
+.darkgrey-bg {
+    background-color: #9DA5C1;
+}
+
+.lightgrey {
+    color: #E2E5EF;
+}
+.lightgrey-bg {
+    background-color: #E2E5EF;
+}
+
+.lightblue {
+    color: #47DEFF;
+}
+.lightblue-bg {
+    background-color: #47DEFF;
+}
+
+.darkblue {
+    color: #272E79;
+}
+.darkblue-bg {
+    background-color: #272E79;
+}
+
+.darkblue-bg-gr {
+    background:linear-gradient(180deg, rgba(52, 59, 131, 0.95) 0%, rgba(52, 59, 131, 0.1615) 100%);
+}
+
+.lightgreen {
+    color: #61EDCB;
+}
+.lightgreen-bg {
+    background-color: #61EDCB;
+}
+
+.brightgreen {
+    color: #00FF57;
+}
+.brightgreen-bg {
+    background-color: #00FF57;
+}
+
+
+.purple {
+    color: #9B51E0;
+}
+.purple-bg {
+    background-color: #9B51E0;
+}
+
+.magenta {
+    color: #DB00FF;
+}
+.magenta-bg {
+    background-color:#DB00FF;
+}
+
+
+.orange {
+    color: #FF9A62;
+}
+.orange-bg {
+    background-color: #FF9A62;
+}
+
+.yellow {
+    color: #FFC700;
+}
+.yellow-bg {
+    background-color: #FFC700;
+}
+
+
+
+.trafficgreen {
+    color: #61ED6F;
+}
+.trafficgreen-bg {
+    background-color: #61ED6F;
+}
+
+.trafficyellow {
+    color: #FEE353;
+}
+.trafficyellow-bg {
+    background-color: #FEE353;
+}
+
+.trafficred {
+    color: #FE5353;
+}
+.trafficred-bg {
+    background-color: #FE5353;
+}
+
+.testdiv{
+    width: 331px;
+    height: 340px;
+    border-radius: 24px;
+}
+
+
