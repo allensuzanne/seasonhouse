@@ -1,1 +1,12 @@
-<p>dashboard works!</p>
+<h1>Weather Forecast</h1>
+     <table>
+        <tbody>
+          <tr *ngFor="let day of info.data">
+            <td>Date: {{day.valid_date}}</td>
+            <td>Low Temperature: {{day.min_temp}}</td>
+            <td>High Temperature: {{day.max_temp}}</td>
+            <td>Weather: {{day.weather.description}}</td>
+            <td><img src="../../assets/images/{{day.weather.icon}}.png"/></td>
+          </tr>
+        </tbody>
+      </table>

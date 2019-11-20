@@ -20,6 +20,7 @@ module.exports = function (app) {
 
     // app.get('/api/read/:id', function(req, res){
     //     house.showOne(req, res);
+
     // });
     
     //     app.put('/api/edit/:id', function(req, res){
