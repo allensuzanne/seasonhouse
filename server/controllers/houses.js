@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const House = mongoose.model('House');
 
+
 module.exports = {
 
     // getHouses: function (req, res) {
@@ -22,6 +23,17 @@ module.exports = {
     //         .then(data => res.json(data))
     //         .catch(err => res.json(err));
     // },
+
+    getLatLong: function (req, res){
+        geocoder.geocode('1109 N Highland St, Arlington VA')
+        .then(response => {
+            console.log(response);
+        })
+        .catch(err => {
+            console.error(err);
+        }
+        );
+    }
 
     // showOne: function (req, res) {
     //     const { id } = req.params;

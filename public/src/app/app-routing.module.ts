@@ -15,11 +15,11 @@ const routes: Routes = [
   {path: 'home',component: HomeComponent},
   {path: 'signup',component: SignupComponent},
   {path: 'login',component: LoginComponent},
-  {path: 'dashboard',component: DashboardComponent},
-  {path: 'messaging',component: MessagingComponent},
-  {path: 'calendar/month',component: MonthComponent},
-  {path: 'calendar/week',component: WeekComponent},
-  {path: 'chores',component: ChoresComponent},
+  {path: 'dashboard/:id',component: DashboardComponent},
+  {path: 'messaging/:id',component: MessagingComponent},
+  {path: 'calendar/month/:id',component: MonthComponent},
+  {path: 'calendar/week/:id',component: WeekComponent},
+  {path: 'chores/:id',component: ChoresComponent},
   {path: '', pathMatch: 'full', redirectTo: '/home'},
   {path: '**', redirectTo: '/home'}
 ];
