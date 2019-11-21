@@ -1,5 +1,6 @@
 
 
+
 <div class="myContainer">
     <nav class="center z-depth-0">
         <nav class="nav-wrapper white z-depth-0">
@@ -21,14 +22,14 @@
     </nav>
 
     <div class="fixed-action-btn mobile">
-        <a class="freeTrialBtn waves-effect waves-light btn" href="#">START FREE TRIAL</a>
+        <a class="freeTrialBtn waves-effect waves-light btn" href="/home">START FREE TRIAL</a>
     </div>
 
     <div class="topSection">
         <div class="ctaContainer">
             <h2 class="tagLine">Your shared season house <br>Organized like your mum would</h2>
             <div class="trialBtnContainer">
-                <a class="freeTrialBtn waves-effect waves-light btn desktop" href="#">START FREE TRIAL</a>
+                <a class="freeTrialBtn waves-effect waves-light btn desktop" href="/home">START FREE TRIAL</a>
                 <div>
                     <div class="noCc">
                         <img src="assets/svgs/noCcDarkGrey.svg" 
@@ -112,7 +113,7 @@
     <div class="bottomSection">
         <div class="trialBtnContainer bottomElement desktop">
             <h3 class="myWhite" >Try it now - for free!</h3>
-            <a class="freeTrialBtn waves-effect waves-light btn" href="#">START FREE TRIAL</a>
+            <a class="freeTrialBtn waves-effect waves-light btn" href="/home">START FREE TRIAL</a>
             <div>
                 <div class="noCc">
                     <img src="assets/svgs/noCcWhite.svg" 
@@ -138,26 +139,9 @@
             <div class="uspContainer">
                 <img src="assets/svgs/prizes.svg" 
                 alt="mtn2"/>
-                <h4 class="myWhite">submit your feedback and win cool prizes</h4>
+                <h4 class="myWhite">Submit your feedback and win cool prizes</h4>
             </div><!-- /.uspContainer -->
         </div><!-- /.uspOuterContainer -->
-
-
-
-
-
-    <!-- <div class="trialBtnContainer bottomElement mobile">
-            <h3 class="myBlack" >Try it now - for free!</h3>
-            <a class="freeTrialBtn waves-effect waves-light btn" href="#">START FREE TRIAL</a>
-            <div>
-                <div class="noCc">
-                    <img src="assets/svgs/noCcDarkGrey.svg" 
-                    alt="mtn2"/>
-                    <p class="smallText myDarkGrey">No credit card required</p>
-                </div>
-            </div>
-        </div> -->
-
     </div><!-- /.bottomSection -->
 
 
@@ -168,10 +152,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, options);
-});
 
+
+});
     $(document).ready(function(){
         $('.sidenav').sidenav();
+        $('freeTrialBtn').click(function() {
+        alert("button clickked");
+        console.log("button clickked");
+        }); 
     });
 </script>
 
