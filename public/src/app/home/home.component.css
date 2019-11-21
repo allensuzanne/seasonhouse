@@ -1,0 +1,236 @@
+
+
+/* Styling of nav-bar   */
+.no-shadows {
+    box-shadow: none!important;
+}
+
+/* Styling of top section   */
+
+.topSection {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    padding: 50px 150px;
+}
+
+.tagLine{
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.ctaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 10;
+}
+
+.trialBtnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:40px;
+}
+
+.freeTrialBtn {
+    box-shadow: 0px 10px 20px rgba(70, 196, 243, 0.25);
+    border-radius: 32px;
+    background: #47DEFF;
+}
+.fixed-action-btn{
+    left: 28%;
+    top: 600px;
+
+    /* z-index: 20; */
+}
+
+.noCc {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.noCc p{
+    margin-left: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.greenVector {
+    position: absolute;
+    top: 260px;
+}
+
+
+/* Styling of middle section */
+
+.middleSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.featureContainer{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+    margin-top: 120px;
+}
+
+.featureContainer h3 {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.featureContainer h5 {
+    margin-top: 16px;
+}
+
+/* Styling of bottom section */
+
+.greyVector {
+    position: absolute;
+    top: 1250px;
+}
+
+.darkBlueVector {
+    position: absolute;
+    top: 1300px;
+    z-index: 5;
+}
+
+.bottomSection {
+    position: absolute;
+    width: 100%;
+    top: 1300px;
+    height: 500px;
+    z-index: 10;
+}
+
+.trialBtnContainer.bottomElement {
+    margin-top: 100px;
+    max-width: 1280px;
+
+}
+
+.bottomElement a{
+    margin-top: 20px;
+
+}
+
+.bottomElement .noCc{
+    margin-top: 15px;
+    
+}
+
+.uspOuterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width:1280px;
+}
+
+.uspContainer {
+    width: 331px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(52, 59, 131, 0.95) 0%, rgba(52, 59, 131, 0.1615) 100%);
+    border-radius: 24px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.uspContainer img{
+    margin-bottom: 20px;
+}
+
+
+/* Styling for mobile devices */
+
+@media screen and (max-width: 480px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .myContainer {
+        width: 340px;
+        padding: 1px;
+    }
+    .featureContainer{
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+        width: 300px;
+    }
+    .topSection {
+        padding: 20px 10px;
+    }
+    .ctaContainer{
+        align-items: center;
+    }
+    .tagLine{
+        font-size:24px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .greenVector {
+        position: absolute;
+        top: 530px;
+    }
+
+    .bottomSection {
+        position: relative;
+        top: 0px;
+        height: auto;
+    }
+    .uspOuterContainer{
+        flex-direction: column;
+        width:90%; 
+        background: linear-gradient(180deg, rgba(52, 59, 131, 0.95) 0%, rgba(52, 59, 131, 0.1615) 100%);
+        border-radius: 24px;
+        margin: 50px auto 20px;
+        padding: 0px;
+        padding-bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .uspContainer {
+        padding:0;
+        background: none;
+        margin: 15px 0;
+        height: 180px;
+        width: 100%;
+    }
+    .trialBtnContainer.bottomElement {
+        margin-top: 0;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+    .mobile{
+        display:none;
+    } 
+}
+
