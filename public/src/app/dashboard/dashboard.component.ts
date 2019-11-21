@@ -50,6 +50,9 @@ export class DashboardComponent implements OnInit {
     console.log("This is the address it's searching for" + address);
     let observable = this._httpService.getLatLong(address);
     observable.subscribe(data =>{
+      if(data['name']=="CastError"){
+        console.log("got an error searching for the house");
+      }else{
         console.log(data);
         console.log("got the latlong");
         this.lat = data.results[0].location.lat; 
@@ -57,6 +60,7 @@ export class DashboardComponent implements OnInit {
         console.log(this.lat);
         console.log(this.long);
         this.getInfo(this.lat, this.long);
+      }
       })
     }
 //GETTING THE WEATHER WITH THE LATLONG

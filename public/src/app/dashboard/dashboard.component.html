@@ -1,12 +1,23 @@
 <h1>5 Day Weather Forecast</h1>
-     <table>
-        <tbody>
-          <tr *ngFor="let day of info.data">
-            <td>{{day.valid_date | date: 'EEEE, MMMM d, y'}}</td>
-            <td>Daily Low: {{day.min_temp}}°F</td>
-            <td>Daily High: {{day.max_temp}}°F</td>
-            <td>{{day.weather.description}}</td>
-            <td><img src="../../assets/images/{{day.weather.icon}}.png"/></td>
-          </tr>
-        </tbody>
-      </table>
+<table>
+  <tbody>
+    <tr>
+      <td *ngFor="let data of info.data">{{data.valid_date | date: 'EEEE, MMMM d, y'}}</td>
+    </tr>
+    <tr>
+      <td  *ngFor="let data of info.data">Daily Low: {{data.min_temp}}°F</td>
+    </tr>
+    <tr>
+      <td  *ngFor="let data of info.data">Daily High: {{data.max_temp}}°F</td>
+    </tr>
+    <tr>
+      <td *ngFor="let data of info.data">{{data.weather.description}}</td>
+    </tr>
+    <tr>
+      <td *ngFor="let data of info.data"><img src="../../assets/images/{{data.weather.icon}}.png"/></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <app-week></app-week>
+<app-month></app-month> -->
