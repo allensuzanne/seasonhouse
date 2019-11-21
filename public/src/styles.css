@@ -1,3 +1,75 @@
+
+/* ***************BEGIN STYLING FOR CALENDAR************* */
+            @import '~@fullcalendar/core/main.css';
+            @import '~@fullcalendar/daygrid/main.css';
+
+            .fc-event{
+                background-color: #47DEFF;
+                border-radius: 18px;
+                border: 1px solid #47DEFF;
+                text-align: center;
+                line-height: 2;
+                font-size: 1.5em;
+                margin: .5em 1;
+                }
+            .fc-unthemed td, .fc-row .fc-content-skeleton td, .fc-row .fc-mirror-skeleton td, .fc-unthemed th{
+                border: 0px;
+            }
+            .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+                font-size: x-large;
+                margin-left: 33%;
+            }
+            .fc-sat, .fc-thu, .fc-tue, .fc-sun{
+                background: #F7F7FA;}
+            tr {
+                border-bottom: none;
+            }
+            .fc-prev-button, .fc-next-button, .fc-today-button{
+                background: #272E79;
+                border-radius: 18px;
+            }
+            .fc-today-button{
+                margin-right: .75em;
+            }
+            .fc-button-primary:disabled {
+                background-color: #9DA5C1;
+                border-color: #9DA5C1;
+            }
+            .fc-row, .fc-content-skeleton{
+                padding-bottom: 2em;
+            }
+            .fc-unthemed td.fc-today {
+                background: #E2E5EF;
+            }
+            .fc-toolbar > * > :not(:first-child) {
+                margin-left: 0em;
+            }
+            .fc-left h2{
+                font-size: xx-large;
+                text-align: center;
+            }
+            .fc-day-header{
+                color: #272E79;
+                font-size: x-large;
+                margin-bottom: 0;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+            .fc-widget-header{
+                padding-bottom: 0;
+            }
+            html{
+                padding: 5%;
+            }
+            .fc-view-container{
+                border: 2px solid #E2E5EF;
+                border-radius: 30px;
+                padding: 2%;
+            }
+            .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+                float: none;
+            }
+/* ***************END STYLING FOR CALENDAR************* */
 /*
 ----------------------- Reset styling, scroll to line 50 for the globally applied styles ----------------
 */

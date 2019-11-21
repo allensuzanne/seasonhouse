@@ -25,8 +25,8 @@ export class DashboardComponent implements OnInit {
       console.log("This id is" + this.id);
     })
     this.getHouse(this.id);
-    this.getLatLong(); //for testing purposes, we can put in an address here
-
+    this.getLatLong(this.house.address); //for testing purposes, we can put in an address here
+  console.log("got to point a")
   }
 //GETTING THE HOUSE
   getHouse(houseId: Number){

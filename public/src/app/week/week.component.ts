@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { HttpService } from '../http.service';
   styleUrls: ['./week.component.css']
 })
 export class WeekComponent implements OnInit {
+
+  calendarPlugins = [dayGridPlugin];
 
   constructor(private _httpService: HttpService) { }
 
