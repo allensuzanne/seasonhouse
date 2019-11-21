@@ -5,23 +5,22 @@ const path = require('path');
 module.exports = function (app) {
 
 
-    // app.get('/api/read', function (req, res) {
-    //     house.getHouses(req, res);
-    // });
+    app.get('/api/read', function (req, res) {
+        house.getHouses(req, res);
+    });
 
-    // app.post('/api/new', function (req, res) {
-    //     house.createNewHouse(req, res);
-    // });
+    app.post('/api/new', function (req, res) {
+        house.createNewHouse(req, res);
+    });
 
 
     // app.delete('/api/delete/:id', function (req, res) {
     //     house.removeOne(req, res);
     // });
 
-    // app.get('/api/read/:id', function(req, res){
-    //     house.showOne(req, res);
-
-    // });
+    app.get('/api/read/:id', function(req, res){
+        house.showOne(req, res);
+    });
     
     //     app.put('/api/edit/:id', function(req, res){
     //         house.updateOne(req, res);

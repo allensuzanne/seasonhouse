@@ -9,21 +9,26 @@ export class HttpService {
 
   constructor(private _http: HttpClient) { }
 
-  // getHouses(){
-  //   return this._http.get('/api/read');
-  // }
+  getHouses(){
+    return this._http.get('/api/read');
+  }
   
-  // createNewHouse(newHouse){
-  //   return this._http.post('/api/new', newHouse);
-  // }
+  createNewHouse(newHouse){
+    return this._http.post('/api/new', newHouse);
+  }
 
   // deleteHouse(num){
   //   return this._http.delete('/api/delete/'+num.data, num);
   // }
 
-  // getHouse(num){
-  //   return this._http.get('/api/read/'+num.data, num);
-  // }
+  getHouse(num){
+    return this._http.get('/api/read/'+num.data, num);
+  }
+
+  getEvents(id){
+    var house =  this._http.get('api/read/'+id.data, id);
+    return house.events;
+  }
 
   getInfo(lat, long){
     return this._http.get("https://api.weatherbit.io/v2.0/forecast/daily?key=58b38563970a40119a1a3d34ae8a27e1&units=I&days=5&lat="+lat+"&lon="+long);

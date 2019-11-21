@@ -27,6 +27,13 @@ const houseSchema = new mongoose.Schema({
             authorName: {type: String, required: true},
             message: { type: String, required: true, minlength: 3}
         }
+    ],
+    events: [
+        {
+            title: {type: String},
+            date: {type: Date},
+            allDay: Boolean
+        }
     ]
 },
     { timestamps: true });

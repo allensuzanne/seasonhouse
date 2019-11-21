@@ -1,0 +1,85 @@
+
+//USE THIS AS A TEMPLATE FOR CREATING NEW HOUSES IN POSTMAN
+STEPS FOUND HERE http://learn.codingdojo.com/m/4/4727/34271
+1. Create a collection
+2. make the url to be localhost:8000/api/new
+3. change the type to POST
+4. change the input type to Body
+5. change the format type to raw
+6. change the language to JSON
+
+{
+    "houseName": "Park City Ski House",
+    "address": "603 Deer Valley Drive, Deer Vally, Ut",
+    "chores": [
+        { 
+            "choreName": "Chop Wood",
+            "frequency": "Once a Week",
+            "time": 30,
+            "assigneeName": "Mike",
+            "status": "Incomplete"
+        },
+                { 
+            "choreName": "Clean Bathroom",
+            "frequency": "Once a Week",
+            "time": 30,
+            "assigneeName": "Melody",
+            "status": "Incomplete"
+        },
+                { 
+            "choreName": "Take Out Garbage",
+            "frequency": "Once a Day",
+            "time": 5,
+            "assigneeName": "Dallan",
+            "status": "Incomplete"
+        }
+    ],
+    "members": [
+        {
+            "memberName": "Mike Trentman",
+            "email": "mike@gmail.com",
+            "password": "hello123"
+        },
+        {
+            "memberName": "Melody Trentman",
+            "email": "melody@gmail.com",
+            "password": "hello123"
+        },
+        {
+            "memberName": "Dallan Trentman",
+            "email": "dallan@gmail.com",
+            "password": "hello123"
+        }
+	],
+    "messages": [
+        {
+            "authorName": "Mike",
+            "message": "Will anybody be going to the grocery store tonight?"
+        },
+        {
+            "authorName": "Melody",
+            "message": "I am. We're out of nacho cheese."
+        },
+        {
+            "authorName": "Dallan",
+            "message": "Not the nacho cheese!!!"
+        }
+    ],
+    "events": [
+        {
+            "title": "3 ppl",
+            "date": "12-25-2019",
+            "allDay": "true"
+        },
+        {
+            "title": "2 ppl",
+            "date": "12-24-2019",
+            "allDay": "true"
+        },
+        {
+            "title": "2 ppl",
+            "date": "12-26-2019",
+            "allDay": "true"
+        }
+    ]
+}
