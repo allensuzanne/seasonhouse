@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FullCalendarModule } from '@fullcalendar/angular';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import {HttpService} from './http.service';
@@ -30,7 +31,8 @@ import { ChoresComponent } from './chores/chores.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FullCalendarModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
