@@ -9,7 +9,7 @@ import { MessagingComponent } from './messaging/messaging.component';
 import { MonthComponent } from './month/month.component';
 import { WeekComponent } from './week/week.component';
 import { ChoresComponent } from './chores/chores.component';
-
+import { ImguploadComponent } from './imgupload/imgupload.component';
 
 const routes: Routes = [
   {path: 'home',component: HomeComponent},
@@ -20,6 +20,7 @@ const routes: Routes = [
   {path: 'calendar/month/:id',component: MonthComponent},
   {path: 'calendar/week/:id',component: WeekComponent},
   {path: 'chores/:id',component: ChoresComponent},
+  {path: 'imgupload',component: ImguploadComponent},
   {path: '', pathMatch: 'full', redirectTo: '/home'},
   {path: '**', redirectTo: '/home'}
 ];
