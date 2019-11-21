@@ -1,23 +1,47 @@
-<h1>5 Day Weather Forecast</h1>
-<table>
-  <tbody>
-    <tr>
-      <td *ngFor="let data of info.data">{{data.valid_date | date: 'EEEE, MMMM d, y'}}</td>
-    </tr>
-    <tr>
-      <td  *ngFor="let data of info.data">Daily Low: {{data.min_temp}}°F</td>
-    </tr>
-    <tr>
-      <td  *ngFor="let data of info.data">Daily High: {{data.max_temp}}°F</td>
-    </tr>
-    <tr>
-      <td *ngFor="let data of info.data">{{data.weather.description}}</td>
-    </tr>
-    <tr>
-      <td *ngFor="let data of info.data"><img src="../../assets/images/{{data.weather.icon}}.png"/></td>
-    </tr>
-  </tbody>
-</table>
+<!-- ////IMAGES SECTION START//////////////////////////// -->
+<!-- ////IMAGES SECTION END  //////////////////////////// -->
 
-<!-- <app-week></app-week>
-<app-month></app-month> -->
+
+<!-- ////WEATHER SECTION START//////////////////////////// -->
+<div class="weather">
+
+    <h1>Weather</h1>
+    <h3>{{info.city_name}}</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td *ngFor="let data of info.data">{{data.valid_date | date: 'EEEE, MMMM d, y'}}</td>
+        </tr>
+        <tr>
+          <td  *ngFor="let data of info.data">Daily Low: {{data.min_temp}}°F</td>
+        </tr>
+        <tr>
+          <td  *ngFor="let data of info.data">Daily High: {{data.max_temp}}°F</td>
+        </tr>
+        <tr>
+          <td *ngFor="let data of info.data">{{data.weather.description}}</td>
+        </tr>
+        <tr>
+          <td *ngFor="let data of info.data"><img src="../../assets/images/{{data.weather.icon}}.png"/></td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
+<!-- ////WEATHER SECTION END  //////////////////////////// -->
+
+
+<!-- ////MONTHLY CALENDAR SECTION START//////////////////////////// -->
+<div class="calendar">
+      <!-- <app-week></app-week>-->
+      <app-month></app-month>
+</div>
+<!-- ////MONTHLY CALENDAR SECTION END  //////////////////////////// -->
+
+
+<!-- ////CHORES SECTION START//////////////////////////// -->
+<!-- ////CHORES SECTION END  //////////////////////////// -->
+
+
+<!-- ////MESSAGING SECTION START//////////////////////////// -->
+<!-- ////MESSAGING SECTION END  //////////////////////////// -->
