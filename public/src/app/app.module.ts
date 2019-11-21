@@ -14,6 +14,7 @@ import { MessagingComponent } from './messaging/messaging.component';
 import { MonthComponent } from './month/month.component';
 import { WeekComponent } from './week/week.component';
 import { ChoresComponent } from './chores/chores.component';
+import { ImguploadComponent } from './imgupload/imgupload.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ChoresComponent } from './chores/chores.component';
     MessagingComponent,
     MonthComponent,
     WeekComponent,
-    ChoresComponent
+    ChoresComponent,
+    ImguploadComponent
   ],
   imports: [
     BrowserModule,
