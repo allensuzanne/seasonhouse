@@ -14,6 +14,7 @@ export class DashboardComponent implements OnInit {
   id: Number;
   info: any;
   house: {};
+  events: [];
   lat=0;
   long=0;
 
@@ -30,6 +31,7 @@ export class DashboardComponent implements OnInit {
    //for testing purposes, we can put in an address here
   console.log("got to point a")
 
+      this.events = this.house.events;
   }
 //GETTING THE HOUSE
   // getHouse(houseId: Number){
