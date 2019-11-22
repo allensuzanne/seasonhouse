@@ -1,0 +1,33 @@
+.chores .border{
+    border: 2px solid #E2E5EF;
+    border-radius: 30px;
+    padding: 2%;
+    height: auto;
+}
+.innerFlex img{
+    padding: 0  7px;
+    text-transform: lowercase;
+    border-radius: 8px;
+    height: 20px;
+    line-height: 22px;
+    vertical-align: center;
+    margin: 35% 0%;
+    display: inline-block;
+    background-color: #E2E5EF
+}
+.list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.list .names{
+    margin: 3% 0 0 3%;
+}
+.list img, .list a{
+    margin-right: 5px;
+}
+.innerFlex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}

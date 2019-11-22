@@ -16,7 +16,7 @@
                 border: 0px;
             }
             .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
-                font-size: x-large;
+                font-size: large;
                 margin-left: 33%;
             }
             .fc-sat, .fc-thu, .fc-tue, .fc-sun{
@@ -55,6 +55,8 @@
                 border-top-left-radius: 25px;
                 border-top-right-radius: 25px;
             }
+            .fc-view, .fc-view > table {
+                margin-bottom: 1%;}
             .fc-widget-header{
                 padding-bottom: 0;
             }
@@ -65,10 +67,15 @@
                 border: 2px solid #E2E5EF;
                 border-radius: 30px;
                 padding: 2%;
+                height: auto;
             }
+            /* .fc-view-container *, .fc-view-container *:before, .fc-view-container *:after {
+                box-sizing: border-box;
+            } */
             .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
                 float: none;
             }
+            .fc-scroller {height:100% !important;}
 /* ***************END STYLING FOR CALENDAR************* */
 /*
 ----------------------- Reset styling, scroll to line 50 for the globally applied styles ----------------
@@ -134,6 +141,7 @@ table {
     margin: 0 auto;
     max-width: 1280px;
     width: 100%;
+    padding: 3%;
     /* outline: 1px solid red; */
 }
 

@@ -12,7 +12,7 @@ const houseSchema = new mongoose.Schema({
             frequency: {type: String, required: true},
             time: {type: Number, required: true},
             assigneeName: {type: String},
-            status: {type: String, required: true}
+            status: {type: Boolean, default: false}
         }
     ],
     members: [

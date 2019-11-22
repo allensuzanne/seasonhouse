@@ -41,6 +41,12 @@ module.exports = {
             .then(data => res.json(data))
             .catch(err => res.json(err));
     },
+    showChore: function (req, res) {
+        const { id } = req.params;
+        House.findOne({ _id: id })
+            .then(data => res.json(data))
+            .catch(err => res.json(err));
+    },
     
     //     updateOne: function(req, res){
     //         const { id } = req.params;
