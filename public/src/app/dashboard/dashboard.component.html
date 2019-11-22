@@ -1,4 +1,5 @@
 <!-- ////IMAGES SECTION START//////////////////////////// -->
+
 <!-- ////IMAGES SECTION END  //////////////////////////// -->
 
 
@@ -37,13 +38,16 @@
 <!-- ////MONTHLY CALENDAR SECTION START//////////////////////////// -->
 <div class="calendar">
     <h1 class="myContainer">Calendar</h1>
-      <!-- <app-week></app-week>-->
       <app-month></app-month>
 </div>
 <!-- ////MONTHLY CALENDAR SECTION END  //////////////////////////// -->
 
 
 <!-- ////CHORES SECTION START//////////////////////////// -->
+      <app-chores></app-chores>
+      <div class="choreFooter ">
+        <a class="waves-effect waves-light btn-small myDarkBlueBg" [routerLink]="['/chores', id]">Detailed View</a>
+    </div>
 <!-- ////CHORES SECTION END  //////////////////////////// -->
 
 

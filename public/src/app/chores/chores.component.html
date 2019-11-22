@@ -1,15 +1,16 @@
 <div class="chores myContainer">
     <h1>House Chores</h1>
     <div class="border">
-        <h2 class="myDarkGrey .myLightGreyBg">Tasks</h2>
+        <h3 class="myLightGreyBg myDarkBlue">Tasks</h3>
         <div class="list" *ngFor="let chore of chores">
             <div class="names">
                 <h4>{{chore.choreName}}</h4>
-                <p>{{chore.frequency}} • {{chore.time}} minutes</p>
+                <p>{{chore.frequency}} •  {{chore.time}} minutes  •  {{chore.assigneeName}}</p>
             </div>
             <div class="innerFlex">
-                <img (click)="completeTask(chore._id)" src="../../assets/images/Rectangle 2.svg">
-                <a [routerLink]="['/']"><img src="../../assets/images/Rectangle 2.3.svg"/></a>
+                <img  *ngIf="!chore.status" src="../../assets/images/Rectangle 2.svg">
+                <img  *ngIf="chore.status" src="../../assets/images/on.png"/>
+                <img src="../../assets/images/edit.png"/>
                 </div>
         </div>
     </div>

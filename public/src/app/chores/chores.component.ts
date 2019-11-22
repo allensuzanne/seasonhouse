@@ -39,8 +39,8 @@ export class ChoresComponent implements OnInit {
       }
     })
   }
-  completeTask(choreID: Number){
-        let observable = this._httpService.getChore({data: choreID});
+  completeTask(choreId: Number){
+    let observable = this._httpService.getChore({data: choreId});
     observable.subscribe(data =>{
       if(data['name']=="CastError"){
         console.log("got an error searching for the chore");
@@ -49,6 +49,7 @@ export class ChoresComponent implements OnInit {
         console.log("got a chore");
         this.oneChore = data;
         this.oneChore.status= true;
+      }
+    })
   }
-    })}
 }

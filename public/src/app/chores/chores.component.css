@@ -1,8 +1,9 @@
 .chores .border{
     border: 2px solid #E2E5EF;
     border-radius: 30px;
-    padding: 2%;
+    padding: 3%;
     height: auto;
+    margin-top: 3%;
 }
 .innerFlex img{
     padding: 0  7px;
@@ -11,9 +12,10 @@
     height: 20px;
     line-height: 22px;
     vertical-align: center;
-    margin: 35% 0%;
+    margin: 25% 0%;
     display: inline-block;
-    background-color: #E2E5EF
+    align-items: center;
+    /* background-color: #E2E5EF */
 }
 .list{
     display: flex;
@@ -23,11 +25,21 @@
 .list .names{
     margin: 3% 0 0 3%;
 }
-.list img, .list a{
+.list img{
     margin-right: 5px;
 }
 .innerFlex{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+.btn-floating{
+    margin: 3%;
+}
+.border h3{
+    padding: 2% 3%;
+    border-radius: 30px;
+}
+.chores h1{
+    margin-left: 3%;
 }
