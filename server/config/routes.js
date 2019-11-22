@@ -33,6 +33,10 @@ module.exports = function (app) {
     app.get('/api/read/:id', function(req, res){
         house.showOne(req, res);
     });
+    app.get('/api/read/chore/:id', function(req, res){
+        house.showChore(req, res);
+    });
+
 
     //     app.put('/api/edit/:id', function(req, res){
     //         house.updateOne(req, res);

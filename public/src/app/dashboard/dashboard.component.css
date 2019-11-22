@@ -1,0 +1,30 @@
+.weather table{
+    border: 2px solid #E2E5EF;
+    border-radius: 30px;
+    padding: 2%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+.weather img{
+    /* height: 75%; */
+    width: 75%;
+}
+.weather th{
+    font-size: 18px;
+    line-height: 22px;
+}
+.weather th, .weather td{
+    text-align: center;
+    margin: 0 auto;
+    }
+.weather tbody{
+    padding: 2%;
+}
+
+.weather table th:before, .weather table th:after, .weather table td:before, .weather table td:after{
+    content: no-close-quote;
+    display: none;
+}

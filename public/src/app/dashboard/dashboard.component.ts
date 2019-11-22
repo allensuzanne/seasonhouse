@@ -14,7 +14,45 @@ export class DashboardComponent implements OnInit {
   id: Number;
   info: any;
   house: {};
-  events: [];
+  events= [{
+    "_id": "5dd7105c8277d634083eb0ce",
+    "houseName": "Park City Ski House",
+    "address": "611 Deer Valley Drive, Deer Vally, Ut",
+    "events": [
+        {
+            "_id": "5dd7105c8277d634083eb0da",
+            "title": "3 ppl",
+            "date": "2019-12-25T08:00:00.000Z",
+            "allDay": true
+        }
+    ],
+        "chores": [
+        {
+            "_id": "5dd7105c8277d634083eb0d1",
+            "choreName": "Chop Wood",
+            "frequency": "Once a Week",
+            "time": 30,
+            "assigneeName": "Mike",
+            "status": "Incomplete"
+        },
+        {
+            "_id": "5dd7105c8277d634083eb0d0",
+            "choreName": "Clean Bathroom",
+            "frequency": "Once a Week",
+            "time": 30,
+            "assigneeName": "Melody",
+            "status": "Incomplete"
+        },
+        {
+            "_id": "5dd7105c8277d634083eb0cf",
+            "choreName": "Take Out Garbage",
+            "frequency": "Once a Day",
+            "time": 5,
+            "assigneeName": "Dallan",
+            "status": "Incomplete"
+        }
+    ]
+}];
   lat=0;
   long=0;
 

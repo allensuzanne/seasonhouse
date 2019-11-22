@@ -1,1 +1,8 @@
-<full-calendar defaultView="dayGridMonth"[header]="{right: 'prev,next ', center: 'title', left: 'today'}" [columnHeaderFormat]= "{weekday: 'narrow'}" [plugins]="calendarPlugins" [events]=events></full-calendar>
+<div class="myContainer">
+    <full-calendar defaultView="dayGridMonth"[header]="{right: 'prev,next ', center: 'title', left: 'today'}" [columnHeaderFormat]= "{weekday: 'narrow'}" [plugins]="calendarPlugins" [events]=events></full-calendar>
+
+    <div class="footer ">
+        <a class="waves-effect waves-light btn-small myDarkBlueBg" [routerLink]="['/calendar/month', id]">Monthly View</a>
+        <a class="waves-effect waves-light btn-small myDarkBlueBg" [routerLink]="['/calendar/week', id]">Weekly View</a>
+    </div>
+</div>
