@@ -5,9 +5,21 @@ const path = require('path');
 module.exports = function (app) {
 
 
+
     app.get('/api/read', function (req, res) {
         house.getHouses(req, res);
     });
+    app.post('/api/images/new', function (req, res) {
+        console.log("images/new route hit");
+        house.saveImage(req, res);
+    });
+
+
+    app.get('/api/read', function (req, res) {
+        house.getHouses(req, res);
+    });
+
+
 
     app.post('/api/new', function (req, res) {
         house.createNewHouse(req, res);
@@ -24,7 +36,8 @@ module.exports = function (app) {
     app.get('/api/read/chore/:id', function(req, res){
         house.showChore(req, res);
     });
-    
+
+
     //     app.put('/api/edit/:id', function(req, res){
     //         house.updateOne(req, res);
     //     });

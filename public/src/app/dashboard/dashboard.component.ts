@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
+import { asRoughDays } from '@fullcalendar/core/datelib/duration';
 
 
 @Component({
@@ -59,29 +60,31 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
 //GET THE ID OF THE HOUSE, AND CALL THE GETHOUSE METHOD
-    this.route.params.subscribe(data=>{
-      this.id = data['id'];
-      console.log("This id is" + this.id);
-    })
-    this.getHouse(this.id);
-    this.getLatLong(this.house.address); //for testing purposes, we can put in an address here
+    // this.route.params.subscribe(data=>{
+    //   this.id = data['id'];
+    //   console.log("This id is" + this.id);
+    // })
+    // this.getHouse(this.id);
+    this.getLatLong('14070 Alder Creek road, truckee, CA')
+   //for testing purposes, we can put in an address here
   console.log("got to point a")
+
       this.events = this.house.events;
   }
 //GETTING THE HOUSE
-  getHouse(houseId: Number){
-    let observable = this._httpService.getHouse({data: houseId});
-    observable.subscribe(data =>{
-      if(data['name']=="CastError"){
-        console.log("got an error searching for the house");
-      }else{
-      console.log(data);
-      console.log("got a house");
-      this.house = data;
-      this.getLatLong(this.house.address)
-      }
-    })
-  }
+  // getHouse(houseId: Number){
+  //   let observable = this._httpService.getHouse({data: houseId});
+  //   observable.subscribe(data =>{
+  //     if(data['name']=="CastError"){
+  //       console.log("got an error searching for the house");
+  //     }else{
+  //     console.log(data);
+  //     console.log("got a house");
+  //     this.house = data;
+  //     this.getLatLong(this.house.address)
+  //     }
+  //   })
+  // }
 //GETTING THE LATLONG
   getLatLong(address: String){
     console.log("This is the address it's searching for" + address);
