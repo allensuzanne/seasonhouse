@@ -10,7 +10,7 @@
   /* z-index: 10; */
 }
 .footer a{
-    margin: 0% 1%;
+    margin: 0% 1% 10% 1%;
     border-radius: 18px;
     text-transform: lowercase;
 }
