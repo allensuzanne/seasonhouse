@@ -36,5 +36,11 @@ This is MEAN application for seasonal housing coordination done in a four-day ha
 
 -In a new terminal window, in the "seasonhouse" folder, run the command ```nodemon server.js``` to run the server
 
+-use the following two urls to see it in action
+
+http://localhost:8000/dashboard/5dd83e845ff86e4290671d11
+
+http://localhost:8000/dashboard/5dd84c5744830943d46e3a39
+
 ## Contact
 smithsuzanne08@gmail.com
