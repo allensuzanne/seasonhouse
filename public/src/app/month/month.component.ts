@@ -13,33 +13,35 @@ export class MonthComponent implements OnInit {
   
   calendarPlugins = [dayGridPlugin];
   events:[];
-  // events=[{title: '3 ppl', date: '2019-11-21'},{title: '2 ppl', date: '2019-11-22'}]
   id: Number;
 
   constructor(private _httpService: HttpService, private route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit() {
+      //GET THE ID FROM THE ROUTE, AND CALL THE GETEVENTS METHOD
     this.route.params.subscribe(data=>{
       this.id = data['id'];
-      console.log("This id is" + this.id);
+      console.log("This id is " + this.id);
     })
     this.getEvents(this.id);
   }
 
+  //GETTING THE SPECIFIC EVENTS
     getEvents(num: Number) {
     let observable = this._httpService.getHouse({ data: num });
     observable.subscribe(data => {
       if(data['name']=="CastError"){
-        console.log("got here");
+        console.log("You got an error getting the house");
         this.reRoute();;
       }else{
       console.log(data);
-      console.log("got house");
+      console.log("You got the house");
       this.events = data.events;
       console.log(this.events);
       }
     })
   }
+  
   reRoute(){
     this._router.navigate(['/']);
   }

@@ -25,7 +25,9 @@ export class ChoresComponent implements OnInit {
     })
     this.getHouse(this.id);
   }
-//GETTING THE HOUSE
+
+
+//GETTING THE SPECIFIC HOUSE
   getHouse(houseId: Number){
     let observable = this._httpService.getHouse({data: houseId});
     observable.subscribe(data =>{
@@ -39,6 +41,8 @@ export class ChoresComponent implements OnInit {
       }
     })
   }
+
+//GETTING THE SPECIFIC CHORE
   completeTask(choreId: Number){
     let observable = this._httpService.getChore({data: choreId});
     observable.subscribe(data =>{
@@ -52,4 +56,6 @@ export class ChoresComponent implements OnInit {
       }
     })
   }
+
+  
 }

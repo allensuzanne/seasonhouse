@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const fs = require('fs');
 
-//----------conntect to db--------------------------------------------------
+//----------CONNECT TO DB--------------------------------------------------
 mongoose.connect('mongodb://localhost/houses', { useNewUrlParser: true });
 require('.././models/house.js');
 

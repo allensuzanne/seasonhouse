@@ -1,13 +1,8 @@
 .footer {
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
   width: 100%;
   display: flex;
   justify-content: center;
-  /* background: #F7F7FA; */
   margin-top: 4%;
-  /* z-index: 10; */
 }
 .footer a{
     margin: 0% 1%;

@@ -30,10 +30,10 @@
 }
 
 .choreFooter {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: -4%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -4%;
 }
 .choreFooter a{
     margin: -13% 1% 20% 1%;

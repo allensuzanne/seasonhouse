@@ -5,7 +5,6 @@ const Schema = mongoose.Schema;
 const houseSchema = new mongoose.Schema({
     houseName: {type: String, required: true, minlength: 3},
     address: {type: String, required: true, unique: true},
-    // weatherCode: {type: Number},
     chores: [
         { 
             choreName: {type: String, required: true, minlength: 3},

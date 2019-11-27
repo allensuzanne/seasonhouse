@@ -4,7 +4,7 @@ const House = mongoose.model('House');
 module.exports = {
 
     saveImage: function (req, res) {
-        console.log("Image received:" + req.body)
+        console.log("Image received: " + req.body)
         const { id } = req.params;
         var house = House.findOne({_id: id})
             .then(house =>{
@@ -16,11 +16,12 @@ module.exports = {
             })
             .catch(err=>res.json(err));
     },
+
     getHouses: function (req, res) {
-         House.find().sort('name')
+        House.find().sort('name')
             .then(data => res.json(data))
             .catch(err => res.json(err));
-     },
+    },
 
     createNewHouse: function (req, res) {
         var newHouse = new House(req.body);
@@ -29,22 +30,10 @@ module.exports = {
             .catch(err => res.json(err));
     },
 
-    // removeOne: function (req, res) {
-    //     const { id } = req.params;
-    //     House.findOneAndDelete({ _id: id })
-    //         .then(data => res.json(data))
-    //         .catch(err => res.json(err));
-    // },
-
     getLatLong: function (req, res){
-        geocoder.geocode('1109 N Highland St, Arlington VA')
-        .then(response => {
-            console.log(response);
-        })
-        .catch(err => {
-            console.error(err);
-        }
-        );
+        geocoder.geocode(address)
+            .then(response => {console.log(response)})
+            .catch(err => {console.error(err)});
     },
 
     showOne: function (req, res) {
@@ -59,26 +48,6 @@ module.exports = {
         House.findOne({ _id: id })
             .then(data => res.json(data))
             .catch(err => res.json(err));
-    },
-    
-    //     updateOne: function(req, res){
-    //         const { id } = req.params;
-    //         House.findOneAndUpdate({_id: id}, req.body, {runValidators: true})
-    //             .then(data => res.json(data))
-    //             .catch(err=> res.json(err));
-    //     },
-//THIS WOULD WORK FOR CHORES, MEMBERS, OR MESSAGES - need to add both front and backend validators to this code
-    // createChore: function(req, res){
-    //     const { id } = req.params;
-    //     var house = House.findOne({_id: id})
-    //         .then(house =>{
-    //             console.log("found house");
-    //             house.chores.push(req.body);
-    //             house.save()
-    //             .then(data => res.json(data))
-    //             .catch(err=> res.json(err));
-    //         })
-    //         .catch(err=>res.json(err));
-    // },
+    }
 
 }
